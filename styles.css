@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/');
+body{
+    font-family: sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+
+
+}
+.sidebar{
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #042331;
+    transition: all .5s ease;
+}
+.sidebar header{
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    background: #063146;
+    user-select: none;
+}
+.sidebar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255,255,255,.1);
+    border-bottom: 1px solid black;
+}
+ul li:hover a{
+    padding-left: 50px;
+}
+.sidebar ul a li{
+    margin-right: 16px;
+}
+#check{
+    display: none;
+}
+
+label #btn,label #cancel{
+    position: absolute;
+    cursor: pointer;
+    background: #042331;
+    border-radius: 3px;
+}
+nav{
+    position: fixed;
+}
+
+#check:checked ~ .sidebar{
+    left: 0;
+}
+#check:checked ~ label #btn{
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+#check:checked ~ label #cancel{
+    left: 195px;
+}
+.fa-facebook{
+    color: blue;
+    font-size: 40px;
+    margin-top: 30px;
+}
+.fa-whatsapp{
+    color: green;
+    font-size: 40px;
+    margin-left: 10px;
+}
+.fa-github{
+    color: black;
+    font-size: 40px;
+    margin-left: 10px;
+}
+
+
+
+label #btn{
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+    color: white;
+    padding: 6px 12px;
+    transition: all .5s;
+}
+label #cancel{
+    z-index: 1111;
+    left: -195px;
+    top: 17px;
+    font-size: 30px;
+    color: #0a5275;
+    padding: 4px 9px;
+    transition: all .5s ease;
+}
+#home{
+  
+    width: 100%;
+}
+#home{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(370px,1fr));
+    gap: 10px;
+
+}
+@media all and (max-width:400px){
+    img{
+        width: 350px;
+        height: 350px;
+    }
+
+}
+#home{
+    margin: 10px;
+}
+ .descreption{
+    margin-top: 120px;
+}
+ @media all and (max-width:932px){
+    #home{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 100px;
+       
+    }
+   
+}
+
+@media all and (max-width:930px){
+    .descreption{
+        margin-top: 10px;
+       
+    }
+    #About{
+        margin-top: 150px;
+    }
+}
+button{
+    font-size: 20px;
+    padding: 7px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+button:hover{
+    background: blue;
+    transition: 1s;
+}
+.tan{
+    margin-left: 20px;
+}
+.fa-user{
+    font-size: 40px;
+    color: #042331;
+}
+.fa-location-dot{
+    font-size: 40px;
+    color: red;
+    
+}
+.fa-envelope{
+    font-size: 40px;
+    color: blue;
+}
+.fa-phone{
+    font-size: 40px;
+
+}
+.fa-user-graduate{
+    font-size: 40px;
+    color: #042331;
+}
+h2{
+    color: #0a5275;
+    font-size: 20px;
+}
+.fa-html5{
+    font-size: 40px;
+    color: orange;
+    margin-top: 20px;
+
+    
+
+}
+.fa-css3-alt{
+    font-size: 40px;
+    color: blue;
+    margin-top: 40px;
+
+}
+.fa-java{
+    font-size: 40px;
+    color: yellow;
+    margin-top: 40px;
+
+}
+.fa-business-time{
+    font-size: 40px;
+    color: green;
+    margin-top: 40px;
+
+}
+#About{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(370px,1fr));
+    gap: 20px;
+
+}
+.fa-android{
+    font-size: 40px;
+    color: blue;
+    margin-top: 40px;
+
+}
+.skills{
+    display: flex;
+    grid-template-columns: repeat(auto-fit,minmax(370px,1fr));
+    gap: 20px;
+
+
+}
+.services{
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(370px,1fr));
+gap: 20px;
+
+}
+.sevice{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.services {
+    text-align: center;
+    border-top: solid black;
+    border-radius: 20px;
+    
+}
+
+.two {
+    display: inline-block;
+}
+
+/* If you want to center the content vertically as well */
+.services .two {
+    vertical-align: middle;
+}
+
+/* Additional styling for the icon inside the "two" div */
+.two i {
+    font-size: 24px; /* Adjust the font size as needed */
+    color: #333; /* Adjust the color as needed */}
+.Web, .App, .school, .solving{
+    background:  whitesmoke;
+    padding: 30px;
+    border-radius: 20px;
+    margin:10px;
+    box-shadow: 10px 10px lightblue;;
+    
+}
+h3{
+    color: #0a5275;
+}
+#About{
+    border-top: solid black;
+    border-radius: 20px;
+    padding-top: 10px;
+    margin: 20px;
+}
+.cv{
+    width: 200px;
+}
+input{
+    width: 305px;
+   /*margin: 20px;*/
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    
+   
+
+}
+#contacts{
+    display: grid;
+grid-template-columns: repeat(auto-fit,minmax(370px,1fr));
+gap: 20px;
+
+}
+textarea{
+    padding: 20px;
+    margin-top: 10px;
+    width: 305px;
+    border-radius: 20px;
+}
+
+@media all and (min-width:932px){
+   section{
+      height: 100vh;
+   }
+  
+}
+#contacts{
+    border-top: solid black;
+    border-radius: 20px;
+    padding-top: 10px;
+    margin: 20px;
+}
+.paragraph{
+    word-spacing: 5px;
+    line-height: 30px;
+}
+/*{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}*/
+@media all and (min-width:932px){
+    #contacts{
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+    }
+  
+ }
+ footer {
+    height: 60px;
+    font-size: 20px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    border-top: solid black;
+}
+@media all and (min-width:932px){
+    #contacts{
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+    }
+}
+@media all and (max-width:932px){
+    footer{
+        width: 100%;
+     
+    }
+}
+@media all and (max-width:610px){
+    footer{
+        width: 100%;
+     
+    }
+}
+@media all and (max-width:580px){
+    footer{
+        width: 100%;
+     
+    }
+}
+@media all and (min-width:510px){
+    footer{
+        width: 100%;
+     
+    }
+}
+@media all and (min-width:318px){
+    footer{
+        width: 100%;
+     
+    }
+}
+@media all and (max-width:932px){
+    *{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+     
+    }
+}
+.fa-house{
+    margin-right: 8px;
+}
+.fa-address-card{
+    margin-right: 8px;
+}
+.fa-servicestack{
+    margin-right: 8px;
+}
+.fa-address-book{
+    margin-right: 8px;
+}
+.fa-file{
+    margin-right: 8px;
+}
+.fa-school{
+    margin-right: 8px;
+}
+.Submit{
+    margin-top: 8px;
+    width: 200px;
+
+}
+.Web:hover{
+    background: white;
+
+}
+.App:hover{
+    background: white;
+
+}
+.school:hover{
+    background: white;
+
+}
+.solving:hover{
+    background: white;
+
+}
+@media all and (min-width:1207px){
+    #About
+    div{
+       margin-top: 100px;
+    }
+  
+ }
+
+#services{
+    margin-bottom: 100px;
+}
+.buton{
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    border-style: solid black;
+    background-color: bisque;
+    
+}
+.hire-button{
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    border-style: solid black;
+    background-color: bisque;
+}
+.biography-button{
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    border-style: solid black;
+    background-color: bisque;
+
+}
+
